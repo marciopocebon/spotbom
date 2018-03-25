@@ -20,19 +20,23 @@
 
         <div id="main">
           <h2>O melhor escritório onde você estiver!</h2>
-          <p>- Você conta para onde vai viajar</p>
-          <p>- Nos informa quando você vai</p>
+          <p>- Você conta para onde vai viajar;</p>
+          <p>- Nos informa quando você vai;</p>
           <p>- Pronto! Vamos selecionar os melhores coworkings com descontos para você trabalhar sem incomodações :)</p>
         </div>
       </div>
 
       <div id="right">
-        <form action="POST" action="">
+        <form action="http://hike.rocketseat.com.br/api/subscriptions" method="POST">
           <h3>Encontre seu próximo escritório!</h3>
-          <input type="text" value="" placeholder="Seu nome" required>
-          <input type="email" value="" placeholder="Seu e-mail" required>
-          <input type="text" value="" placeholder="Seu telefone" required>
-          <textarea placeholder="Para onde você vai e em quais datas?" required></textarea>
+          <input type="hidden" name="data[list_id]" value="40f1cebb-c9a2-4f88-a33a-c374f0630190">
+
+          <input type="hidden" name="data[redirect_url]" value="http://spotbom.co/sucesso.html">
+
+          <input type="text" name="data[name]" placeholder="Digite seu nome" required>
+          <input type="email" name="data[email]" placeholder="Digite seu e-mail" required>
+          <input type="text" name="data[idea]" placeholder="Digite seu telefone" required>
+          <textarea name="data[skills]" placeholder="Para onde você vai e quais datas?"></textarea>
           <input type="submit" value="Enviar">
         </form>
       </div>
