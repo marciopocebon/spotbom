@@ -98,6 +98,13 @@ img {
   color:  #FFF;
   border-radius: 3px;
   background-color: #EB9F32;
+  cursor: pointer;
+  transition: all linear 200ms;
+}
+
+#wrapper #right input[type="submit"]:hover,
+#wrapper #right input[type="submit"]:focus {
+  background-color: #D7912E;
 }
 
 #wrapper #right span {
@@ -133,4 +140,25 @@ img {
     width: 100%;
     padding: 20px;
   }
+}
+
+#sucesso #wrapper img {
+  max-width: 400px;
+}
+
+#sucesso #wrapper {
+  text-align: center;
+  display: flex;
+  align-items:  center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#sucesso #wrapper h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#sucesso #wrapper p {
+  max-width: 400px;
 }
